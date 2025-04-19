@@ -1,6 +1,6 @@
 {"scripts": {
   "dev": "nodemon",
-  "start": "ts-node src/index.ts"
+  "start": "node src/index.ts"
 },
   "dependencies": {
     "cors": "^2.8.5",
