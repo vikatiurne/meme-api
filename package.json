@@ -1,5 +1,6 @@
 {"scripts": {
-  "dev":"nodemon"
+  "dev":"nodemon",
+  "start": "npm run dev"
 },
   "dependencies": {
     "cors": "^2.8.5",
