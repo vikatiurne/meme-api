@@ -12,13 +12,11 @@ const PORT = process.env.PORT ?? 5001;
 
 const app = express();
 
-app.use(
-  cors({
-    origin: 'https://meme-web-production.up.railway.app',
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Autorization"],
-  })
-);
+app.use(cors({  
+  origin: ['https://meme-web-production.up.railway.app', 'http://localhost:3000'],  
+  methods: ["GET", "POST", "PUT", "DELETE"],  
+  allowedHeaders: ["Content-Type", "Authorization"],  
+  }))
 
 connectDB();
 
