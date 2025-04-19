@@ -2,7 +2,6 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 
-
 import { errorHandler } from "./error";
 import { connectDB } from "./db";
 import router from "./router";
